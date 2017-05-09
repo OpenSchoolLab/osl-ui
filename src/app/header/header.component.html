@@ -1,0 +1,20 @@
+<md-toolbar color="primary" class="md2 md-toolbar md-primary app-header-wrapper">
+  <md-toolbar color="primary">
+    <div class="md-toolbar-layout">
+      <span class="app-toolbar-filler"></span>
+    </div>
+    <div style="display: inline-flex;width: 100%;"></div>
+    <button md-icon-button class="float-right" (click)="openAppsDialog()">
+      <md-icon>dashboard</md-icon>
+    </button>
+    <button md-icon-button [mdMenuTriggerFor]="menu" class="float-right">
+      <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item (click)="signOut()">
+        <md-icon>power_settings_new</md-icon>
+        <span>Logout</span>
+      </button>
+    </md-menu>
+  </md-toolbar>
+</md-toolbar>

@@ -1,0 +1,16 @@
+.app-list {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding: 5px;
+    display: inline-block;
+    md-icon {
+      font-size: 3em;
+      width: 100%;
+      text-align: center;
+    }
+    span.menu-label {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.search-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20%;
+  position: relative;
+
+  md-input-container {
+    width: 100%;
+    padding-left: 40px;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  font-size: 36px;
+}

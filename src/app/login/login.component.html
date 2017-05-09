@@ -1,0 +1,19 @@
+<md-card class="login-wrapper">
+  <md-card-header class="login-header">Login</md-card-header>
+  <md-card-content class="login-content">
+    <form name="loginForm" #f="ngForm" (ngSubmit)="onLoginFormSubmit(signInForm)">
+      <div class="login-info">
+        <md-input-container class="full-width" typeof="email">
+          <input id="email" type="email" mdInput placeholder="Email" required [(ngModel)]="signInForm.email" name="email" #email="ngModel">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input type="password" mdInput placeholder="Password" required [(ngModel)]="signInForm.password" name="password" #password="ngModel" minlength="{{minLength}}">
+        </md-input-container>
+      </div>
+      <button md-raised-button [disabled]="!f.valid">
+        Login
+      </button>
+    </form>
+  </md-card-content>
+  <md-progress-bar mode="indeterminate" class="progress-bar" *ngIf="loading"></md-progress-bar>
+</md-card>
